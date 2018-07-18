@@ -28,3 +28,9 @@ set backspace=indent,eol,start
 set background=dark
 
 highlight Visual cterm=reverse ctermbg=NONE
+
+" xml folding
+augroup XML
+    autocmd!
+    autocmd FileType xml setlocal foldmethod=indent foldlevelstart=999 foldminlines=0
+augroup END
